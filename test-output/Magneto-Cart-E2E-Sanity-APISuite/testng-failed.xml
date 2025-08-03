@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Magneto-Cart-E2E-Sanity-APISuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Magneto-Cart-E2E-Sanity-APITest(failed)">
+    <classes>
+      <class name="api.testCases.CartFlowTest">
+        <methods>
+          <include name="custTokeninit"/>
+          <include name="testUpdatCartItem"/>
+        </methods>
+      </class> <!-- api.testCases.CartFlowTest -->
+    </classes>
+  </test> <!-- Magneto-Cart-E2E-Sanity-APITest(failed) -->
+</suite> <!-- Failed suite [Magneto-Cart-E2E-Sanity-APISuite] -->

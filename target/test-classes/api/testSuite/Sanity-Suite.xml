@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Magneto-Cart-API-Sanity-Suite">
+<listeners>
+		<listener class-name="api.utils.ReportManager"/>
+		<listener class-name="api.utils.RetryListener"/>
+	</listeners>
+  <test thread-count="5" name="Magneto-Cart-API-Sanity-Suite">
+   <groups>
+   <run>
+   <include name="sanity"/>
+   </run>
+   </groups>
+    <classes>
+      <class name="api.testCases.CustomerFlowTest"/>
+      <class name="api.testCases.CartFlowTest"/>
+    </classes>
+  </test> 
+</suite>
+
+<!--Verify critical flow of cart operations (create, add, get)-->

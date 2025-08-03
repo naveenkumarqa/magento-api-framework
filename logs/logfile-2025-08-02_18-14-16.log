@@ -1,0 +1,14 @@
+18:14:12 [main] INFO  api.testBase.BaseTest - Starting Test: testCreateCart
+18:14:12 [main] INFO  api.testBase.BaseTest - POST--> CREATE CART
+18:14:13 [main] INFO  api.testBase.BaseTest - Cart ID is --------------------> 449608
+18:14:13 [main] INFO  api.testBase.BaseTest - Finished Test: testCreateCart
+18:14:13 [main] INFO  api.testBase.BaseTest - Starting Test: testAddItemToCart
+18:14:13 [main] INFO  api.testBase.BaseTest - POST--> ADD CART ITEMS
+18:14:15 [main] INFO  api.testBase.BaseTest - Item id is ------------> 885983
+18:14:15 [main] INFO  api.testBase.BaseTest - Finished Test: testAddItemToCart
+18:14:15 [main] INFO  api.testBase.BaseTest - Starting Test: testViewCartItems
+18:14:15 [main] INFO  api.testBase.BaseTest - GET--> VIEW CART
+18:14:16 [main] INFO  api.testBase.BaseTest - Finished Test: testViewCartItems
+18:14:16 [main] INFO  api.testBase.BaseTest - Starting Test: testUpdatCartItem
+18:14:16 [main] INFO  api.testBase.BaseTest - PUT--> UPDATE CART
+18:14:16 [main] INFO  api.testBase.BaseTest - --------------------------->>>>>>>>>>>>>>>>>>>>>

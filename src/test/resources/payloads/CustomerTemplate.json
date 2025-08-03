@@ -1,0 +1,28 @@
+{
+  "customer": {
+    "email": "{{email}}",
+    "firstname": "{{firstname}}",
+    "lastname": "{{lastname}}",
+    "addresses": [
+      {
+        "defaultShipping": true,
+        "defaultBilling": true,
+        "firstname": "{{firstname}}",
+        "lastname": "{{lastname}}",
+        "region": {
+          "regionCode": "NY",
+          "region": "New York",
+          "regionId": 43
+        },
+        "postcode": "10755",
+        "street": [
+          "123 Oak Ave"
+        ],
+        "city": "Purchase",
+        "telephone": "512-555-1111",
+        "countryId": "US"
+      }
+    ]
+  },
+  "password": "{{password}}"
+}

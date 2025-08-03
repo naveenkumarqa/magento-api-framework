@@ -1,0 +1,9 @@
+19:08:17 [main] INFO  api.testBase.BaseTest - Finished Test: testViewCartItems
+19:08:17 [main] INFO  api.testBase.BaseTest - Starting Test: testUpdatCartItem
+19:08:17 [main] INFO  api.testBase.BaseTest - PUT--> UPDATE CART
+19:08:17 [main] INFO  api.testBase.BaseTest - --------------------------->>>>>>>>>>>>>>>>>>>>>
+19:08:17 [main] INFO  api.testBase.BaseTest - {"cartItem":{"sku":"24-MB01","qty":1,"quote_id":"450047"}}
+19:08:19 [main] INFO  api.testBase.BaseTest - Finished Test: testUpdatCartItem
+19:08:19 [main] INFO  api.testBase.BaseTest - Starting Test: testDeleteCartItem
+19:08:19 [main] INFO  api.testBase.BaseTest - DELETE--> DELETE CART
+19:08:20 [main] INFO  api.testBase.BaseTest - Finished Test: testDeleteCartItem

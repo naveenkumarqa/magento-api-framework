@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Properties> 
+		<Property name="fileprop">./logs</Property>
+	</Properties>
+	
+	<Appenders>
+			<Console name="Console" target="SYSTEM_OUT">
+		<PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		
+		<RollingFile 
+		name = "logfile" 
+		fileName="${fileprop}/logfile.log" 
+		filePattern="${fileprop}/logfile-%d{yyyy-MM-dd_HH-mm-ss}.log"> 
+		<PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+		<sizeBasedTriggeringPolicy size = "1kb"/>
+		</RollingFile>
+	
+	</Appenders>
+	
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="logfile"/>
+		</Root>
+	</Loggers>
+</Configuration>

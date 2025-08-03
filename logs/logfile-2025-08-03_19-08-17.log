@@ -1,0 +1,13 @@
+19:08:11 [main] INFO  api.testBase.BaseTest - POST--> GET CUSTOMER USING TOKEN
+19:08:13 [main] INFO  api.testBase.BaseTest - Finished Test: testGetCustomerDetails
+19:08:13 [main] INFO  api.testBase.BaseTest - Base URI set to: https://magento.softwaretestingboard.com
+19:08:13 [main] INFO  api.testBase.BaseTest - Starting Test: testCreateCart
+19:08:13 [main] INFO  api.testBase.BaseTest - POST--> CREATE CART
+19:08:14 [main] INFO  api.testBase.BaseTest - Cart ID is --------------------> 450047
+19:08:14 [main] INFO  api.testBase.BaseTest - Finished Test: testCreateCart
+19:08:14 [main] INFO  api.testBase.BaseTest - Starting Test: testAddItemToCart
+19:08:14 [main] INFO  api.testBase.BaseTest - POST--> ADD CART ITEMS
+19:08:16 [main] INFO  api.testBase.BaseTest - Item id is ------------> 886505
+19:08:16 [main] INFO  api.testBase.BaseTest - Finished Test: testAddItemToCart
+19:08:16 [main] INFO  api.testBase.BaseTest - Starting Test: testViewCartItems
+19:08:16 [main] INFO  api.testBase.BaseTest - GET--> VIEW CART

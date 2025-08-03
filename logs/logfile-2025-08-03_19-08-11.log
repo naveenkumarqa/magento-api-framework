@@ -1,0 +1,12 @@
+18:40:00 [main] INFO  api.testBase.BaseTest - GET--> VIEW CART
+18:40:01 [main] INFO  api.testBase.BaseTest - Finished Test: testViewCartItems
+19:08:07 [main] INFO  api.testBase.BaseTest - Customer token initialized: mysfcbylftfdflrk8w5xtnl5myc2eqvc
+19:08:07 [main] INFO  api.testBase.BaseTest - Base URI set to: https://magento.softwaretestingboard.com
+19:08:07 [main] INFO  api.testBase.BaseTest - Starting Test: testCreateCustomer
+19:08:07 [main] INFO  api.testBase.BaseTest - POST--> CREATE CUSTOMER
+19:08:10 [main] INFO  api.testBase.BaseTest - Finished Test: testCreateCustomer
+19:08:10 [main] INFO  api.testBase.BaseTest - Starting Test: testGenerateCustomerToken
+19:08:10 [main] INFO  api.testBase.BaseTest - POST--> CREATE CUSTOMER TOKEN
+19:08:11 [main] INFO  api.testBase.BaseTest - Customer token is ------------> f97e8abtqb27chfhyzn0xmvecnt43bex
+19:08:11 [main] INFO  api.testBase.BaseTest - Finished Test: testGenerateCustomerToken
+19:08:11 [main] INFO  api.testBase.BaseTest - Starting Test: testGetCustomerDetails

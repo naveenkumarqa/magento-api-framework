@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Magneto-Cart-API-Smoke-Suite">
+<listeners>
+		<listener class-name="api.utils.ReportManager"/>
+		<listener class-name="api.utils.RetryListener"/>
+	</listeners>
+  <test thread-count="5" name="Magneto-Cart-API-Smoke-Test">
+    <classes>
+    <class name="api.services.CustomerService"/>
+    </classes>
+  </test> 
+</suite> 
+
+<!--Verify the core flow of Customer creation-->

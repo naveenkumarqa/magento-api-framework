@@ -1,0 +1,12 @@
+18:14:16 [main] INFO  api.testBase.BaseTest - {"cartItem":{"sku":"24-MB01","qty":1,"quote_id":"449608"}}
+18:14:18 [main] INFO  api.testBase.BaseTest - Finished Test: testUpdatCartItem
+18:14:18 [main] INFO  api.testBase.BaseTest - Starting Test: testDeleteCartItem
+18:14:18 [main] INFO  api.testBase.BaseTest - DELETE--> DELETE CART
+18:14:19 [main] INFO  api.testBase.BaseTest - Finished Test: testDeleteCartItem
+18:16:20 [main] INFO  api.services.CartService - Create Cart Customer token
+18:38:13 [main] INFO  api.testBase.BaseTest - Customer token initialized: buf39m8gu4c5a7cqof6fnqke20o3x5tz
+18:38:13 [main] INFO  api.testBase.BaseTest - Base URI set to: https://magento.softwaretestingboard.com
+18:38:13 [main] INFO  api.testBase.BaseTest - Starting Test: testCreateCustomer
+18:38:13 [main] INFO  api.testBase.BaseTest - POST--> CREATE CUSTOMER
+18:38:15 [main] INFO  api.testBase.BaseTest - Finished Test: testCreateCustomer
+18:38:15 [main] INFO  api.testBase.BaseTest - Starting Test: testGenerateCustomerToken

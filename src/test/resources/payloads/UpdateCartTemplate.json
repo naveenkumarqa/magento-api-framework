@@ -1,0 +1,8 @@
+{
+    "cartItem": {
+        "item_id": {{item_id}},
+        "sku": "{{sku_id}}",
+        "qty": 1, 
+        "quote_id": "{{cart_id}}"
+    }
+}

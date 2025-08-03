@@ -1,0 +1,13 @@
+18:38:15 [main] INFO  api.testBase.BaseTest - POST--> CREATE CUSTOMER TOKEN
+18:38:16 [main] INFO  api.testBase.BaseTest - Customer token is ------------> 2yutlol94pjhgswirpkriuwz4r2s262x
+18:38:16 [main] INFO  api.testBase.BaseTest - Finished Test: testGenerateCustomerToken
+18:38:16 [main] INFO  api.testBase.BaseTest - Starting Test: testGetCustomerDetails
+18:38:16 [main] INFO  api.testBase.BaseTest - POST--> GET CUSTOMER USING TOKEN
+18:38:18 [main] INFO  api.testBase.BaseTest - Finished Test: testGetCustomerDetails
+18:38:18 [main] INFO  api.testBase.BaseTest - Base URI set to: https://magento.softwaretestingboard.com
+18:38:18 [main] INFO  api.testBase.BaseTest - Starting Test: testCreateCart
+18:38:18 [main] INFO  api.testBase.BaseTest - POST--> CREATE CART
+18:38:19 [main] INFO  api.testBase.BaseTest - Finished Test: testCreateCart
+18:38:19 [main] INFO  api.testBase.BaseTest - Starting Test: testAddItemToCart
+18:38:19 [main] INFO  api.testBase.BaseTest - POST--> ADD CART ITEMS
+18:38:19 [main] INFO  api.testBase.BaseTest - Finished Test: testAddItemToCart

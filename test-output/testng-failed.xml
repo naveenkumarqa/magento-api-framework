@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Magneto-Cart-API-Sanity-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Magneto-Cart-API-Sanity-Suite(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="api.testCases.CartFlowTest">
+        <methods>
+          <include name="logEnd"/>
+          <include name="testCreateCart"/>
+          <include name="logStart"/>
+          <include name="setUpSuite"/>
+          <include name="configureRestAssured"/>
+          <include name="testViewCartItems"/>
+          <include name="testAddItemToCart"/>
+        </methods>
+      </class> <!-- api.testCases.CartFlowTest -->
+    </classes>
+  </test> <!-- Magneto-Cart-API-Sanity-Suite(failed) -->
+</suite> <!-- Failed suite [Magneto-Cart-API-Sanity-Suite] -->
