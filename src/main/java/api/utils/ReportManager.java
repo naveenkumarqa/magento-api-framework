@@ -33,7 +33,7 @@ public class ReportManager implements ITestListener {
 		sparkArchive.config().setTheme(Theme.DARK);
 		
 		//Static report (for Jenkins)
-		sparkStatic = new ExtentSparkReporter("./reports/index.html");
+		sparkStatic = new ExtentSparkReporter("./reports/html-report/");
 		sparkStatic.config().setDocumentTitle("Magento-API_StaticReport");
 		sparkStatic.config().setReportName("Magento-API-Automation");
 		sparkStatic.config().setTheme(Theme.DARK);
