@@ -15,29 +15,37 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ReportManager implements ITestListener {
 	
-	public ExtentSparkReporter spark;
+	public ExtentSparkReporter sparkArchive;
+	public ExtentSparkReporter sparkStatic;
 	public ExtentReports report;
 	public ExtentTest extentTest;
 	
 	String repName;
-	
+
 	public void onStart(ITestContext context) {
+		//Timestamped report (for archive)
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		repName = "Test-Report-"+timeStamp+".html";
+
+		sparkArchive = new ExtentSparkReporter("./reports/"+repName);
+		sparkArchive.config().setDocumentTitle("Magento-API_Report");
+		sparkArchive.config().setReportName("Magento-API-Automation");
+		sparkArchive.config().setTheme(Theme.DARK);
 		
-		spark = new ExtentSparkReporter("./reports/"+repName);
-		spark.config().setDocumentTitle("Magento-API-Suite");
-		spark.config().setReportName("Magento-API-Automation");
-		spark.config().setTheme(Theme.DARK);
-		
+		//Static report (for Jenkins)
+		sparkStatic = new ExtentSparkReporter("./reports/index.html");
+		sparkStatic.config().setDocumentTitle("Magento-API_StaticReport");
+		sparkStatic.config().setReportName("Magento-API-Automation");
+		sparkStatic.config().setTheme(Theme.DARK);
+
 		report = new ExtentReports();
-		report.attachReporter(spark);
+		report.attachReporter(sparkArchive, sparkStatic);
 		report.setSystemInfo("Application", "MagentoAPI");
 		report.setSystemInfo("OS", System.getProperty("os.name"));
 		report.setSystemInfo("Java version", System.getProperty("java.version"));
 		report.setSystemInfo("User", "Naveen");
 	}
-	
+
 	public void onTestStart(ITestResult result) {
 		extentTest = report.createTest(result.getMethod().getMethodName());
 		extentTest.assignCategory(result.getMethod().getGroups());
