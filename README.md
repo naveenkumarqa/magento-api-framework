@@ -139,42 +139,30 @@ magneto-api-framework
   
 ```
 
-  
-  
-
-### 📍 2.4 **Test Case Development & Mapping**
-
-  
+### 📋 2.4 **Test Case Development & Mapping**
 
 Manual test cases are added under test/resources as TestCaseSheet.xml
  
 
-| Action                    | Endpoint                        | Test Class             | Client Method                 |
-|---------------------------|--------------------------------|-----------------------|------------------------------|
-| Create Customer           | `POST /V1/customers`            | `CreateCustomerTest`   | `CustomerClient.createCustomer()` |
-| Generate Customer JWT Token | `POST /integration/customer/token` | Used in `@BeforeMethod` | `AuthClient.getCustomerToken()`    |
-| Get Customer Details      | `GET /customers/me`             | `GetCustomerDetailsTest` | `CustomerClient.getCustomerDetails()` |
-| Create Empty Cart         | `POST /carts/mine`              | `CreateCartTest`       | `CartClient.createCart()`     |
-| Add Item to Cart          | `POST /carts/mine/items`        | `AddItemToCartTest`    | `CartClient.addItem()`        |
-| View Cart Items           | `GET /carts/mine/items`         | `ViewCartItemsTest`    | `CartClient.getItems()`       |
-| Update Cart Item Quantity | `PUT /carts/mine/items/{item_id}` | `UpdateCartItemTest`   | `CartClient.updateItem()`     |
-| Remove Cart Item          | `DELETE /carts/mine/items/{item_id}` | `RemoveCartItemTest`   | `CartClient.removeItem()`     |
+| Test Case ID   | Title                           | Test Category      | Expected Response Fields               |
+|----------------|---------------------------------|--------------------|----------------------------------------|
+| API-CUST-01    | Create customer with valid data | Smoke, Regression  | `Customer_ID`                          |
+| API-CUST-02    | Generate customer JWT token     | Smoke, Regression  | `Customer_Bearer_Token`                |
+| API-CUST-03    | View the customer               | Smoke, Regression  | `Customer_ID`, profile details         |
+| API-CART-01    | Create cart for customer        | Sanity, Regression | `Cart_ID`                              |
+| API-CART-02    | Add product to cart             | Sanity, Regression | `Item_ID`, product details             |
+| API-CART-03    | View items in cart              | Sanity, Regression | Cart summary including `Item_ID`       |
+| API-CART-04    | Update cart item quantity       | Regression         | Updated `Item_ID`, updated quantity    |
+| API-CART-05    | Delete cart item                | Regression         | Success message, `Item_ID` removed     |
 
-
-  
 
 ---
 
-  
-
 >  **DESIGN PHASE**
 
->
-
-  
+>  
 
 # 🏗️ 3. Architecture Setup
-
   
 
 ### 🎟️ 3.1 Authentication Strategy
@@ -667,22 +655,6 @@ Configure **Publish HTML Reports**:
 - This ensures Jenkins always picks the **latest static report**
 
 - Archived timestamped reports remain for offline review
-
-
----
-## 📋 **Test Case Mapping**
-
-| Test Case ID   | Title                           | Test Category      | Expected Response Fields               |
-|----------------|---------------------------------|--------------------|----------------------------------------|
-| API-CUST-01    | Create customer with valid data | Smoke, Regression  | `Customer_ID`                          |
-| API-CUST-02    | Generate customer JWT token     | Smoke, Regression  | `Customer_Bearer_Token`                |
-| API-CUST-03    | View the customer               | Smoke, Regression  | `Customer_ID`, profile details         |
-| API-CART-01    | Create cart for customer        | Sanity, Regression | `Cart_ID`                              |
-| API-CART-02    | Add product to cart             | Sanity, Regression | `Item_ID`, product details             |
-| API-CART-03    | View items in cart              | Sanity, Regression | Cart summary including `Item_ID`       |
-| API-CART-04    | Update cart item quantity       | Regression         | Updated `Item_ID`, updated quantity    |
-| API-CART-05    | Delete cart item                | Regression         | Success message, `Item_ID` removed     |
-
 
 ---
 ## 🧾 How to Run
